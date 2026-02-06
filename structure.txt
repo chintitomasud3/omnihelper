@@ -1,0 +1,28 @@
+omnipy/
+├── __init__.py
+├── core/                     # Common utilities (logging, config, errors)
+│   ├── __init__.py
+│   ├── logger.py
+│   ├── config.py
+│   └── exceptions.py
+├── io/                       # File, directory, text I/O
+│   ├── __init__.py
+│   ├── file_ops.py           # pathlib-based, safe read/write
+│   ├── text_utils.py         # clean, parse, format text
+│   └── csv_excel.py          # pandas wrapper with validation
+├── net/                      # HTTP, API, network helpers
+│   ├── __init__.py
+│   └── http_client.py        # httpx + retry + timeout + auth
+├── system/                   # Linux/OS automation
+│   ├── __init__.py
+│   └── shell.py              # secure subprocess execution
+├── data/                     # Data analysis & ML helpers
+│   ├── __init__.py
+│   ├── dataframe_utils.py    # pandas best practices
+│   └── ml_helpers.py         # preprocessing, metrics wrappers
+├── security/                 # SOC, hashing, encoding, IP utils
+│   ├── __init__.py
+│   └── validators.py
+└── utils/                    # Cross-cutting helpers (e.g., timing, retry)
+    ├── __init__.py
+    └── decorators.py
